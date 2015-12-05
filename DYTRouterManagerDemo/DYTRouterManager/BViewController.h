@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BViewController.h
 //  DYTRouterManager
 //
 //  Created by tumg on 15/12/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BViewController : UIViewController
 
 @end
-

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  AViewController.h
 //  DYTRouterManager
 //
 //  Created by tumg on 15/12/5.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface AViewController : UIViewController
 
 @end
-
