@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A24C185C1C12838D00283647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A24C185B1C12838D00283647 /* main.m */; };
+		A24C185F1C12838D00283647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A24C185E1C12838D00283647 /* AppDelegate.m */; };
+		A24C18621C12838D00283647 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24C18611C12838D00283647 /* ViewController.m */; };
+		A24C18651C12838D00283647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24C18631C12838D00283647 /* Main.storyboard */; };
+		A24C18671C12838D00283647 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24C18661C12838D00283647 /* Images.xcassets */; };
+		A24C186A1C12838D00283647 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A24C18681C12838D00283647 /* LaunchScreen.xib */; };
+		A24C18761C12838D00283647 /* DYTRouterManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A24C18751C12838D00283647 /* DYTRouterManagerTests.m */; };
+		A2D1D4AA1C128596000C67D2 /* DYTRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1D4A41C128596000C67D2 /* DYTRouterManager.m */; };
+		A2D1D4AB1C128596000C67D2 /* DYTRouterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1D4A61C128596000C67D2 /* DYTRouterNode.m */; };
+		A2D1D4AC1C128596000C67D2 /* DYTRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1D4A91C128596000C67D2 /* DYTRouterUrl.m */; };
+		A2D1D4B01C128780000C67D2 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1D4AF1C128780000C67D2 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2D1D4B21C128845000C67D2 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D1D4B11C128845000C67D2 /* libicucore.A.dylib */; };
+		A2D1D4B51C1291C9000C67D2 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1D4B41C1291C9000C67D2 /* AViewController.m */; };
+		A2D1D4B81C1292EB000C67D2 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1D4B71C1292EB000C67D2 /* BViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A24C18701C12838D00283647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A24C184E1C12838D00283647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A24C18551C12838D00283647;
+			remoteInfo = DYTRouterManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A24C18561C12838D00283647 /* DYTRouterManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTRouterManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24C185A1C12838D00283647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24C185B1C12838D00283647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A24C185D1C12838D00283647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A24C185E1C12838D00283647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A24C18601C12838D00283647 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A24C18611C12838D00283647 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A24C18641C12838D00283647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A24C18661C12838D00283647 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A24C18691C12838D00283647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A24C186F1C12838D00283647 /* DYTRouterManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTRouterManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24C18741C12838D00283647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24C18751C12838D00283647 /* DYTRouterManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYTRouterManagerTests.m; sourceTree = "<group>"; };
+		A2D1D4A31C128596000C67D2 /* DYTRouterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTRouterManager.h; sourceTree = "<group>"; };
+		A2D1D4A41C128596000C67D2 /* DYTRouterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTRouterManager.m; sourceTree = "<group>"; };
+		A2D1D4A51C128596000C67D2 /* DYTRouterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTRouterNode.h; sourceTree = "<group>"; };
+		A2D1D4A61C128596000C67D2 /* DYTRouterNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTRouterNode.m; sourceTree = "<group>"; };
+		A2D1D4A71C128596000C67D2 /* DYTRouterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTRouterProtocol.h; sourceTree = "<group>"; };
+		A2D1D4A81C128596000C67D2 /* DYTRouterUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTRouterUrl.h; sourceTree = "<group>"; };
+		A2D1D4A91C128596000C67D2 /* DYTRouterUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTRouterUrl.m; sourceTree = "<group>"; };
+		A2D1D4AE1C128780000C67D2 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		A2D1D4AF1C128780000C67D2 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		A2D1D4B11C128845000C67D2 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
+		A2D1D4B31C1291C9000C67D2 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		A2D1D4B41C1291C9000C67D2 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		A2D1D4B61C1292EB000C67D2 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		A2D1D4B71C1292EB000C67D2 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A24C18531C12838D00283647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D1D4B21C128845000C67D2 /* libicucore.A.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24C186C1C12838D00283647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A24C184D1C12838D00283647 = {
+			isa = PBXGroup;
+			children = (
+				A2D1D4B11C128845000C67D2 /* libicucore.A.dylib */,
+				A24C18581C12838D00283647 /* DYTRouterManager */,
+				A24C18721C12838D00283647 /* DYTRouterManagerTests */,
+				A24C18571C12838D00283647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A24C18571C12838D00283647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A24C18561C12838D00283647 /* DYTRouterManager.app */,
+				A24C186F1C12838D00283647 /* DYTRouterManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A24C18581C12838D00283647 /* DYTRouterManager */ = {
+			isa = PBXGroup;
+			children = (
+				A2D1D4AD1C128660000C67D2 /* class */,
+				A24C185D1C12838D00283647 /* AppDelegate.h */,
+				A24C185E1C12838D00283647 /* AppDelegate.m */,
+				A24C18601C12838D00283647 /* ViewController.h */,
+				A24C18611C12838D00283647 /* ViewController.m */,
+				A2D1D4B31C1291C9000C67D2 /* AViewController.h */,
+				A2D1D4B41C1291C9000C67D2 /* AViewController.m */,
+				A2D1D4B61C1292EB000C67D2 /* BViewController.h */,
+				A2D1D4B71C1292EB000C67D2 /* BViewController.m */,
+				A24C18631C12838D00283647 /* Main.storyboard */,
+				A24C18661C12838D00283647 /* Images.xcassets */,
+				A24C18681C12838D00283647 /* LaunchScreen.xib */,
+				A24C18591C12838D00283647 /* Supporting Files */,
+			);
+			path = DYTRouterManager;
+			sourceTree = "<group>";
+		};
+		A24C18591C12838D00283647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A24C185A1C12838D00283647 /* Info.plist */,
+				A24C185B1C12838D00283647 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A24C18721C12838D00283647 /* DYTRouterManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A24C18751C12838D00283647 /* DYTRouterManagerTests.m */,
+				A24C18731C12838D00283647 /* Supporting Files */,
+			);
+			path = DYTRouterManagerTests;
+			sourceTree = "<group>";
+		};
+		A24C18731C12838D00283647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A24C18741C12838D00283647 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2D1D4AD1C128660000C67D2 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				A2D1D4AE1C128780000C67D2 /* RegexKitLite.h */,
+				A2D1D4AF1C128780000C67D2 /* RegexKitLite.m */,
+				A2D1D4A71C128596000C67D2 /* DYTRouterProtocol.h */,
+				A2D1D4A31C128596000C67D2 /* DYTRouterManager.h */,
+				A2D1D4A41C128596000C67D2 /* DYTRouterManager.m */,
+				A2D1D4A51C128596000C67D2 /* DYTRouterNode.h */,
+				A2D1D4A61C128596000C67D2 /* DYTRouterNode.m */,
+				A2D1D4A81C128596000C67D2 /* DYTRouterUrl.h */,
+				A2D1D4A91C128596000C67D2 /* DYTRouterUrl.m */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A24C18551C12838D00283647 /* DYTRouterManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24C18791C12838D00283647 /* Build configuration list for PBXNativeTarget "DYTRouterManager" */;
+			buildPhases = (
+				A24C18521C12838D00283647 /* Sources */,
+				A24C18531C12838D00283647 /* Frameworks */,
+				A24C18541C12838D00283647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYTRouterManager;
+			productName = DYTRouterManager;
+			productReference = A24C18561C12838D00283647 /* DYTRouterManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A24C186E1C12838D00283647 /* DYTRouterManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24C187C1C12838D00283647 /* Build configuration list for PBXNativeTarget "DYTRouterManagerTests" */;
+			buildPhases = (
+				A24C186B1C12838D00283647 /* Sources */,
+				A24C186C1C12838D00283647 /* Frameworks */,
+				A24C186D1C12838D00283647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A24C18711C12838D00283647 /* PBXTargetDependency */,
+			);
+			name = DYTRouterManagerTests;
+			productName = DYTRouterManagerTests;
+			productReference = A24C186F1C12838D00283647 /* DYTRouterManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A24C184E1C12838D00283647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tumg;
+				TargetAttributes = {
+					A24C18551C12838D00283647 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A24C186E1C12838D00283647 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A24C18551C12838D00283647;
+					};
+				};
+			};
+			buildConfigurationList = A24C18511C12838D00283647 /* Build configuration list for PBXProject "DYTRouterManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A24C184D1C12838D00283647;
+			productRefGroup = A24C18571C12838D00283647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A24C18551C12838D00283647 /* DYTRouterManager */,
+				A24C186E1C12838D00283647 /* DYTRouterManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A24C18541C12838D00283647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24C18651C12838D00283647 /* Main.storyboard in Resources */,
+				A24C186A1C12838D00283647 /* LaunchScreen.xib in Resources */,
+				A24C18671C12838D00283647 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24C186D1C12838D00283647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A24C18521C12838D00283647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D1D4B01C128780000C67D2 /* RegexKitLite.m in Sources */,
+				A24C18621C12838D00283647 /* ViewController.m in Sources */,
+				A24C185F1C12838D00283647 /* AppDelegate.m in Sources */,
+				A2D1D4AA1C128596000C67D2 /* DYTRouterManager.m in Sources */,
+				A2D1D4B81C1292EB000C67D2 /* BViewController.m in Sources */,
+				A2D1D4B51C1291C9000C67D2 /* AViewController.m in Sources */,
+				A2D1D4AB1C128596000C67D2 /* DYTRouterNode.m in Sources */,
+				A2D1D4AC1C128596000C67D2 /* DYTRouterUrl.m in Sources */,
+				A24C185C1C12838D00283647 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24C186B1C12838D00283647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24C18761C12838D00283647 /* DYTRouterManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A24C18711C12838D00283647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A24C18551C12838D00283647 /* DYTRouterManager */;
+			targetProxy = A24C18701C12838D00283647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A24C18631C12838D00283647 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24C18641C12838D00283647 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A24C18681C12838D00283647 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24C18691C12838D00283647 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A24C18771C12838D00283647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A24C18781C12838D00283647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A24C187A1C12838D00283647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYTRouterManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A24C187B1C12838D00283647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYTRouterManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A24C187D1C12838D00283647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DYTRouterManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYTRouterManager.app/DYTRouterManager";
+			};
+			name = Debug;
+		};
+		A24C187E1C12838D00283647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DYTRouterManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYTRouterManager.app/DYTRouterManager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A24C18511C12838D00283647 /* Build configuration list for PBXProject "DYTRouterManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24C18771C12838D00283647 /* Debug */,
+				A24C18781C12838D00283647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24C18791C12838D00283647 /* Build configuration list for PBXNativeTarget "DYTRouterManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24C187A1C12838D00283647 /* Debug */,
+				A24C187B1C12838D00283647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24C187C1C12838D00283647 /* Build configuration list for PBXNativeTarget "DYTRouterManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24C187D1C12838D00283647 /* Debug */,
+				A24C187E1C12838D00283647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A24C184E1C12838D00283647 /* Project object */;
+}
