@@ -18,6 +18,7 @@
 
 @implementation DYTRouterManager
 
+#pragma mark - init
 +(instancetype)shareInstance{
     static dispatch_once_t onceToken;
     static DYTRouterManager *manager = nil;
@@ -37,6 +38,7 @@
     return self;
 }
 
+#pragma mark - public
 -(void)openUrl:(NSString *)url delegate:(UIViewController *)delegate{
     DYTRouterUrl *routerUrl = [[DYTRouterUrl alloc] initWithUrl:url];
     [self p_openDYTRouterUrl:routerUrl delegate:delegate];
@@ -54,17 +56,17 @@
         return;
     }
     
-    if(![url.urlSchema isEqualToString:G_DYTRouterManager_defaultUrlSchema]){
+    if(!delegate || ![delegate isKindOfClass:[UIViewController class]]){
         return;
     }
     
-    if(!delegate || ![delegate isKindOfClass:[UIViewController class]]){
+    if(![url.urlSchema isEqualToString:G_DYTRouterManager_defaultUrlSchema]){
         return;
     }
     
     //url转换成node
     DYTRouterNode *routerNode = [[DYTRouterNode alloc] initWithUrl:url];
-    UIViewController<DYTRouterProtocol> *willPresentController = [routerNode returnController];
+    UIViewController<DYTRouterProtocol> *willPresentController = [routerNode getDYTViewController];
     
     //弹出方式
     DYTRouterUrlTransFormStyle transForm = routerNode.transForm;

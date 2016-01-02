@@ -18,6 +18,7 @@
 
 @implementation DYTRouterNode
 
+#pragma mark - init
 -(instancetype)initWithUrl:(DYTRouterUrl *)url{
     if(self = [super init]){
         if(!url) {
@@ -32,11 +33,8 @@
     return [[[self class] alloc] initWithUrl:nil];
 }
 
--(DYTRouterUrlTransFormStyle)transForm{
-    return self.url.transFormStyle;
-}
-
--(UIViewController<DYTRouterProtocol> *)returnController{
+#pragma mark - public
+-(UIViewController<DYTRouterProtocol> *)getDYTViewController{
     switch (self.url.classType) {
         //className 为 main:mainVC,main是StoryBoard的文件名，mainVC是对应的ViewController的缩写
         case DYTRouterUrlClassTypeStoryboard:{
@@ -58,7 +56,7 @@
     return nil;
 }
 
-#pragma mark private method
+#pragma mark - private
 -(NSString *)p_getFullClassNameByClassName:(NSString *)className{
     if(NSClassFromString(className)){
         return className;
@@ -74,4 +72,8 @@
     return nil;
 }
 
+#pragma mark - getter
+-(DYTRouterUrlTransFormStyle)transForm{
+    return self.url.transFormStyle;
+}
 @end

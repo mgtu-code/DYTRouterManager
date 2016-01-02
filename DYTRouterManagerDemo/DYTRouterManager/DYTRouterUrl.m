@@ -10,11 +10,13 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "RegexKitLite.h"
 
+
 static NSString *const p_urlSchemaKey = @"urlSchema";
 static NSString *const p_classNameKey = @"className";
 static NSString *const p_classTypeKey = @"classType";
 static NSString *const p_transFormStyleKey = @"transFormStyle";
 static NSString *const p_urlParamsKey = @"urlParams";
+
 
 @interface DYTRouterUrl ()
 
@@ -28,11 +30,13 @@ static NSString *const p_urlParamsKey = @"urlParams";
 
 @end
 
+
 @implementation DYTRouterUrl
 
+#pragma mark - init
 -(instancetype)initWithUrl:(NSString *)url{
     if(self = [super init]){
-        _cache = [self shareInstanceCache];
+        _cache = [self p_shareInstanceCache];
         [self p_parseUrl:url];
     }
     return self;
@@ -49,6 +53,10 @@ static NSString *const p_urlParamsKey = @"urlParams";
     return self;
 }
 
+-(instancetype)init{
+    return [[[self class] alloc] initWithUrl:nil];
+}
+
 #pragma mark - private
 //将url进行解析，并通过NSCache进行缓存
 -(void)p_parseUrl:(NSString *)url{
@@ -58,7 +66,7 @@ static NSString *const p_urlParamsKey = @"urlParams";
     }
     
     //获取缓存值
-    NSString *urlMd5Key = [self getMd5String:url];
+    NSString *urlMd5Key = [self p_getMd5String:url];
     NSDictionary *cacheDictionary = [self.cache objectForKey:urlMd5Key];
     
     if(cacheDictionary){
@@ -150,7 +158,7 @@ static NSString *const p_urlParamsKey = @"urlParams";
 }
 
 //获取字符串的md5
--(NSString *)getMd5String:(NSString*)str{
+-(NSString *)p_getMd5String:(NSString*)str{
     const char *original_str = [str UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(original_str, (CC_LONG)strlen(original_str), result);
@@ -161,7 +169,7 @@ static NSString *const p_urlParamsKey = @"urlParams";
 }
 
 //单例的NSCache
--(NSCache *)shareInstanceCache{
+-(NSCache *)p_shareInstanceCache{
     static dispatch_once_t onceToken;
     static NSCache *cache = nil;
     dispatch_once(&onceToken, ^{
@@ -169,4 +177,6 @@ static NSString *const p_urlParamsKey = @"urlParams";
     });
     return cache;
 }
+
+
 @end

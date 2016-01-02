@@ -29,6 +29,6 @@
 /**
  * 返回node对应的UIViewController
  */
--(UIViewController<DYTRouterProtocol> *)returnController;
+-(UIViewController<DYTRouterProtocol> *)getDYTViewController;
 
 @end
